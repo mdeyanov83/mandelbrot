@@ -1,2 +1,2 @@
-# fractal-playground
-A mandelbrot and julia sets visualizer using WebGL2
+# mandelbrot
+A simple mandelbrot and julia sets visualizer using WebGL2
