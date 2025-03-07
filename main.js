@@ -465,7 +465,7 @@ function main() {
     // Compute iterations value at X, Y coordinates since it is only available inside the fragment shader
     function getIterations(x, y) {
         let zx = 0, zy = 0;
-        let cx = x; cy = y;
+        let cx = x, cy = y;
         let i;
         for (i = 0; i < maxIterations; i++) {
             let xtemp = zx * zx - zy * zy + x;
