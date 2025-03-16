@@ -20,8 +20,8 @@ let resolutionLoc, centerLoc, zoomLoc, iterationsLoc;
 let resolutionLocJulia, centerLocJulia, zoomLocJulia, iterationsLocJulia;
 let vertexPositionAttribLocation, vertexPositionAttribLocationJulia;
 // Initial Main fractal and Julia variables
-export let centerX = -0.7, centerY = 0.0;
-export let zoomMain = 1.0, maxIterations = 150;
+let centerX = -0.7, centerY = 0.0;
+let zoomMain = 1.0, maxIterations = 150;
 let zoomJulia = 1.5, maxIterationsJulia = 50;
 
 // Vertex shader source
@@ -233,7 +233,7 @@ function renderJulia(x, y) {
 }
 
 
-export function renderSavedView (x, y, zoom, iter) {
+function renderSavedView (x, y, zoom, iter) {
     centerX = x;
     centerY = y;
     zoomMain = zoom;
